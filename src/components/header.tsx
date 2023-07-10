@@ -36,13 +36,13 @@ const AccountMenu = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem>
+        <DropdownMenuItem asChild>
           <Link href="/dashboard" className="flex gap-1 items-center">
             <LineChart className="mr-2 h-4 w-4" />
             <span>Dashboard</span>
           </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem>
+        <DropdownMenuItem asChild>
           <Link href="/profile" className="flex gap-1 items-center">
             <User2 className="mr-2 h-4 w-4" />
             <span>Profile</span>
