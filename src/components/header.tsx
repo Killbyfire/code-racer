@@ -16,6 +16,7 @@ import { useState } from "react";
 import { ModeToggle } from "./mode-toggle";
 import { LoginButton } from "./ui/buttons";
 import Spinner from "./ui/spinner";
+import { LineChart, User2 } from "lucide-react";
 
 const AccountMenu = () => {
   const session = useSession();
@@ -37,13 +38,13 @@ const AccountMenu = () => {
       <DropdownMenuContent align="end">
         <DropdownMenuItem>
           <Link href="/dashboard" className="flex gap-1 items-center">
-            <Icons.settings className="mr-2 h-4 w-4" />
+            <LineChart className="mr-2 h-4 w-4" />
             <span>Dashboard</span>
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <Link href="/profile" className="flex gap-1 items-center">
-            <Icons.settings className="mr-2 h-4 w-4" />
+            <User2 className="mr-2 h-4 w-4" />
             <span>Profile</span>
           </Link>
         </DropdownMenuItem>
